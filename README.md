@@ -4,4 +4,4 @@
 
 帮一个做财务的朋友写的，很多年没用招行网银了，不知道格式变了没有。
 
-![](](https://github.com/SeanTo/Xls2pay/blob/master/xls2pay.png)
+![](](https://raw.githubusercontent.com/SeanTo/Xls2pay/master/xls2pay.png)
