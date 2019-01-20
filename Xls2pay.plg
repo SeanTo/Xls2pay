@@ -1,0 +1,35 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Xls2pay - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/Xls2pay.res" /d "NDEBUG" /d "_AFXDLL" "Z:\RamDisk\Projects\C\Excel\Xls2payEx\Xls2pay.rc"" 
+Creating temporary file "C:\DOCUME~1\Admin\LOCALS~1\Temp\RSP6D.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/Xls2pay.pdb" /machine:I386 /out:"Release/Xls2pay.exe" 
+.\Release\AreaCode.obj
+.\Release\cmb.obj
+.\Release\ExcelVC6.obj
+.\Release\HyperLink.obj
+.\Release\ListCtrlEx.obj
+.\Release\StdAfx.obj
+.\Release\wnd.obj
+.\Release\Xls2pay.obj
+.\Release\Xls2payDlg.obj
+.\Release\Xls2pay.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Admin\LOCALS~1\Temp\RSP6D.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+Xls2pay.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

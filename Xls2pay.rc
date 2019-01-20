@@ -1,0 +1,296 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Xls2pay.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Xls2pay.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 106
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 xls2pay"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "XLS2PAY 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008  保留所有权",IDC_STATIC,40,25,118,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Excel 格式转招商银行批量转账格式工具",IDC_STATIC,40,62,
+                    147,8
+    LTEXT           "tuxw2005@gmail.com",IDC_STATIC_HOME,97,45,90,8
+    LTEXT           "By：醉书生",IDC_STATIC_AUTHOR,40,46,48,8
+    LTEXT           "本软件免费使用。可有偿定制。",IDC_STATIC,40,78,130,10
+END
+
+IDD_XLS2PAY_DIALOG DIALOGEX 0, 0, 418, 226
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "XLS2PAY 1.0 - 批量转账格式自动转换 for 招行"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "XLS 文件",IDC_BTN_XLS,7,9,45,12
+    EDITTEXT        IDC_EDIT_XLS,55,9,188,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    COMBOBOX        IDC_CMB_SHEET,50,166,55,108,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_DISABLED | WS_TABSTOP
+    COMBOBOX        IDC_CMB_ACCOUNT,128,166,115,131,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_DISABLED | WS_TABSTOP
+    PUSHBUTTON      "PAY 路径",IDC_BTN_PAY,6,152,42,12
+    EDITTEXT        IDC_EDIT_PAY,50,152,193,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    CONTROL         "转账类型",IDC_CHK_SEL_TYPE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,184,44,9
+    COMBOBOX        IDC_CMB_TYPE,50,181,118,131,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_DISABLED | WS_TABSTOP
+    CONTROL         "字段检查",IDC_CHK_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,256,9,43,9
+    CONTROL         "自动纠错",IDC_CHK_AUTOFIX,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,256,22,43,9
+    DEFPUSHBUTTON   "读取",IDOK,255,39,47,14,WS_DISABLED
+    PUSHBUTTON      "退出",IDCANCEL,255,65,47,14
+    PUSHBUTTON      "关于...",IDC_ABOUT,255,83,47,14
+    PUSHBUTTON      "配置>>",IDC_BTN_CONFIG,255,109,47,14
+    CONTROL         "允许更名",IDC_CHK_RENAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,256,138,43,9
+    PUSHBUTTON      "保存",IDC_BTN_SAVE,255,150,47,14,WS_DISABLED
+    CONTROL         "转出账号",IDC_CHK_SEL_ACC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,257,168,44,9
+    COMBOBOX        IDC_CMB_PROV0,51,209,37,150,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | CBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_CITY0,89,209,37,150,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | CBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_CODE0,127,209,33,150,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_PROV,196,209,37,150,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | CBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_CITY,234,209,37,150,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | CBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_CODE,272,209,33,150,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_TIP,8,39,235,104,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL | NOT WS_TABSTOP
+    LTEXT           "选择表单",IDC_STATIC_TIP2,17,169,32,8
+    LTEXT           "摘要：",IDC_STATIC,11,28,25,8,WS_DISABLED
+    LTEXT           "不勾则从表格读取",IDC_STATIC_TIP1,170,184,64,8,
+                    WS_DISABLED
+    LTEXT           "账号",IDC_STATIC_TIP3,109,169,16,8
+    LTEXT           "国内区号",IDC_STATIC,17,212,32,8
+    LTEXT           "招行支持",IDC_STATIC,163,212,32,8
+    CONTROL         "List1",IDC_LIST_CONFIG,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,315,15,97,169,WS_EX_STATICEDGE
+    LTEXT           "鼠标双击编辑\n[CTRL/SHIFT+]Tab 跳格\n回车结束编辑",
+                    IDC_STATIC,319,195,87,26
+END
+
+IDD_SET DIALOG DISCARDABLE  0, 0, 293, 228
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,243,0,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,243,24,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Xls2pay Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Xls2pay\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Xls2pay.EXE\0"
+            VALUE "ProductName", "Xls2pay 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_XLS2PAY_DIALOG DLGINIT
+BEGIN
+    IDC_CMB_TYPE, 0x403, 26, 0
+0x5254, 0x3146, 0xcd3a, 0xb3ac, 0xd5c7, 0xd0d0, 0xb8d0, 0xc8f6, 0xd5cb, 
+0xbbcb, 0xd7a7, 0xd5aa, 0x00cb, 
+    IDC_CMB_TYPE, 0x403, 26, 0
+0x5254, 0x3246, 0xcd3a, 0xb3ac, 0xd5c7, 0xd0d0, 0xb5d0, 0xcea5, 0xd5bb, 
+0xbbcb, 0xd7a7, 0xd5aa, 0x00cb, 
+    IDC_CMB_TYPE, 0x403, 18, 0
+0x5254, 0x3346, 0xcd3a, 0xb3ac, 0xcbc7, 0xd0fb, 0xd7d0, 0xd5aa, 0x00cb, 
+
+    IDC_CMB_TYPE, 0x403, 28, 0
+0x5254, 0x3154, 0xd23a, 0xb5ec, 0xd5d8, 0xd0d0, 0xcfd0, 0xcdb5, 0xc4b3, 
+0xbfda, 0xcbec, 0xbbd9, 0xbfe3, 0x00ee, 
+    IDC_CMB_TYPE, 0x403, 28, 0
+0x5254, 0x3254, 0xd23a, 0xb5ec, 0xd5d8, 0xd0d0, 0xcfd0, 0xcdb5, 0xc4b3, 
+0xc6da, 0xcdd5, 0xbba8, 0xbfe3, 0x00ee, 
+    IDC_CMB_TYPE, 0x403, 18, 0
+0x5254, 0x3354, 0xd23a, 0xb5ec, 0xcbd8, 0xd0fb, 0xbbd0, 0xbfe3, 0x00ee, 
+
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Xls2pay(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Xls2pay.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
